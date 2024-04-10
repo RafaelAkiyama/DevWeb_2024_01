@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <title>Pseudoclasses</title>
+ <style>
+ p:first-child {
+ color: blue;
+ }
+ </style>
+</head>
+<body>
+ <section>
+ <p>Primeiro elemento &lt;p&gt; filho do elemento
+ &lt;section&gt;.</p>
+ <p>Parágrafo qualquer.</p>
+ </section>
+ <footer>
+ <p>Primeiro elemento &lt;p&gt; filho do elemento
+ &lt;footer&gt;.</p>
+ <p>Parágrafo qualquer.</p>
+ </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <title>Pseudoclasses</title>
+ <style>
+ .mylist li:first-child {
+ background: greenyellow;
+ }
+ .mylist li:nth-child(3) {
+ background: grey;
+ }
+ .mylist li:last-child {
+ background: yellow;
+ }
+ </style>
+</head>
+<body>
+ <section>
+ <p>Lista não ordenada colorida</p>
+ <ul class="mylist">
+ <li>Primeiro filho</li>
+ <li>Segundo filho</li>
+ <li>Terceiro filho</li>
+ <li>Quarto filho</li>
+ <li>Último filho</li>
+ </ul>
+ </section>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <title>Pseudoelementos</title>
+ <style>
+ p::before {
+ content: "Leia isso - ";
+ }
+ p::after {
+ content: " - Leia Mais";
+ }
+ </style>
+</head>
+<body>
+ <p>Meu nome é Rafael</p>
+ <p>Eu moro em São Paulo</p>
+</body>
+</html>
+
