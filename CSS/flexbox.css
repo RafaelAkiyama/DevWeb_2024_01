@@ -1,0 +1,19 @@
+@charset "utf-8";
+body{
+    background-color: orange;
+    border: 1px saddlebrown solid;
+}    
+.container > * {
+border-radius: 1px;
+border: 2px solid #fff;
+margin: 16px; 
+padding: 10x;;
+text-align: center;
+}
+
+.container {
+display: flex; 
+height: 300px; 
+align-items: stretch;
+justify-content: center;
+}
