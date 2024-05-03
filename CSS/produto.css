@@ -1,0 +1,25 @@
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(#066cb1, #066cb1 50%, 
+#b3b3b3 50%, #b3b3b3 100%);
+min-height: 100vh;
+}
+.cartão {
+position: relative;
+width: 300px;
+height: 380px;
+background: #0000;
+display: flex;
+box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+transition: 0.5s ease-in-out;
+}
+.cartão:hover {
+width: 600px;
+}
+.cartão .imgBx {
+position: relative;
+min-width: 300px;
+}
