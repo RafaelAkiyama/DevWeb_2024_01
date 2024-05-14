@@ -55,3 +55,27 @@ const frutas5 = ['Banana', 'Laranja', 'Maçã', 'Manga'];
 delete frutas5[2];
 console.log(frutas5);
 
+
+//criando função js
+function addNums(num1 = 1, num2 =1){
+return num1 + num2;
+}
+
+//Chamada a função addNums 
+let g = addNums(4,5);
+console.log(g);
+
+
+
+//Arrow Function
+const hello = () => {
+return 'Óla Arrow Function';
+};
+
+//Exemplo usando versão da addNums:
+const addNums2 = (num1 = 1, num2 =1) => {
+return num1 + num2;
+}
+
+let soma = addNums2 (5, 10);
+console.log(soma);
