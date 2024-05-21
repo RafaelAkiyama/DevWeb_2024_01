@@ -30,3 +30,14 @@ for (let i = 0; i < li.length; i++) {
 if (i % 2) li[i].style.backgroundColor = '#f4f4f4';
 else li[i].style.backgroundColor = '#fff';
 }
+
+
+// Método getElementsByName
+let nome = document.getElementsByName('fitem');
+console.clear();
+console.log(nome);
+nome[0].textContent = 'Olá pessoas';
+nome[0].style.backgroundColor = 'yellow';
+nome[1].textContent = 'Tudo bem?';
+nome[1].style.backgroundColor = '#BAC1FB';
+
