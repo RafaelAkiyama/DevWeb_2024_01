@@ -41,3 +41,17 @@ nome[0].style.backgroundColor = 'yellow';
 nome[1].textContent = 'Tudo bem?';
 nome[1].style.backgroundColor = '#BAC1FB';
 
+
+// Alterando o estilo da lista
+let ul = document.getElementById('items');
+ul.style.listStyle = 'none';
+
+
+// Marcadores númericos
+ul.style.listStyle = 'decimal inside';
+
+
+
+
+
+
