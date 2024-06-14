@@ -1,0 +1,55 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+}
+
+
+.container {
+max-width: 800px;
+margin: 20px auto;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+}
+
+
+h1, h2, p {
+margin: 10px 0;
+}
+
+
+.topic {
+border-bottom: 1px solid #ccc;
+padding-bottom: 20px;
+margin-bottom: 20px;
+}
+
+
+.topic:last-child {
+border-bottom: none;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 20px auto;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.robotics-color {
+color: #4CAF50; /* verde */
+}
+
+
+.technology-color {
+color: #2196F3; /* azul */
+}

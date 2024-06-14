@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informações dos Alunos</title>
+<style>
+table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+}
+th, td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: left;
+}
+th {
+background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+<h2>Informações dos Alunos</h2>
+
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Notas</th>
+<th>Média</th>
+<th>Endereço</th>
+<th>Situação</th>
+</tr>
+</thead>
+<tbody id="alunosTableBody">
+    
+</tbody>
+</table>
+
+<script>
+ 
+let alunos = [
+{
+nome: "João",
+notas: [7.5, 8.0, 6.5],
+endereco: {
+rua: "Rua das Flores, 123",
+cidade: "São Paulo",
+estado: "SP"
+}
+},
+{
+nome: "Maria",
+notas: [6.0, 5.5, 7.0],
+endereco: {
+rua: "Av. Principal, 456",
+cidade: "Rio de Janeiro",
+estado: "RJ"
+}
+},
+{
+nome: "Pedro",
+notas: [8.5, 9.0, 7.5],
+endereco: {
+rua: "Rua dos Passarinhos, 789",
+cidade: "Belo Horizonte",
+estado: "MG"
+}
+}
+];
+  
+const tbody = document.getElementById('alunosTableBody');
+    
+alunos.forEach(aluno => {
+       
+const media = aluno.notas.reduce((acc, nota) => acc + nota, 0) / aluno.notas.length;
+      
+const situacao = media >= 7 ? 'Aprovado' : 'Reprovado';
+        
+let row = document.createElement('tr');
+        
+let nomeCell = document.createElement('td');
+nomeCell.textContent = aluno.nome;
+row.appendChild(nomeCell);
+
+let notasCell = document.createElement('td');
+notasCell.textContent = aluno.notas.join(', ');
+row.appendChild(notasCell);
+
+let mediaCell = document.createElement('td');
+mediaCell.textContent = media.toFixed(1); // Exibir a média com uma casa decimal
+row.appendChild(mediaCell);
+
+let enderecoCell = document.createElement('td');
+enderecoCell.textContent = `${aluno.endereco.rua}, ${aluno.endereco.cidade} - ${aluno.endereco.estado}`;
+row.appendChild(enderecoCell);
+
+let situacaoCell = document.createElement('td');
+situacaoCell.textContent = situacao;
+row.appendChild(situacaoCell);
+
+   
+tbody.appendChild(row);
+});
+
+</script>
+</body>
+</html>
